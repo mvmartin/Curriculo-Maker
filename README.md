@@ -14,11 +14,11 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <h4 align="center"> 
    Projeto Concluído  ✅
 </h4>
-    <h4 align="center"> Para Abrir e Testar o Projeto <a href="https://mvmartin.github.io/destinos-Viagens/">  Click Aqui!</a>  </h4> 
+  
     
     
 <h1 align="center">
-   <img src=https://github.com/mvmartin/destinos-Viagens/blob/main/assets/projetoFinalizadoGif.gif height="400px" /> 
+   <img src=https://github.com/mvmartin/Curriculo-Maker/blob/main/Curriculo%20Maker.gif height="400px" /> 
   </h1>
 
  
