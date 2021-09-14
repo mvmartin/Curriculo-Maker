@@ -18,7 +18,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
     
     
 <h1 align="center">
-   <img src=https://github.com/mvmartin/Curriculo-Maker/blob/main/Curriculo%20Maker.gif height="400px" /> 
+   <img src=https://github.com/mvmartin/Curriculo-Maker/blob/main/Curriculo%20Maker%20(1)%20(1).gif height="400px" /> 
   </h1>
 
  
