@@ -1,0 +1,54 @@
+@media screen and (max-width:870px){
+
+    .box{
+        margin-left: 4%;
+    }
+
+    img{
+        margin-left: 40%;
+    }
+
+    .info-pessoais, .objetivo,.formacao,.primeira-experiencia,.segunda-experiencia,.terceira-experiencia,.atividade-complementar,.idiomas{
+        margin:1rem 3rem;
+    }
+}
+
+@media screen and (max-width:615px){
+    .box{
+        margin:0;
+        
+    }
+    
+    .section-pessoal p{
+        text-align: center;
+    }
+
+    .curriculo-nome{
+       
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    p{
+        text-align: center;
+        
+    }
+  
+    .div-flexbox{
+        justify-content: center;
+    }
+
+    h4{
+        text-align: center;
+        margin-right: 0;
+
+    }
+
+    ul{
+        margin-left: 6%;
+        align-items: center;
+        text-align: center;
+
+    }
+}
+

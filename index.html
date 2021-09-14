@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/formulario.css">
+    <link rel="stylesheet" href="./assets/curriculo.css">
+    <link rel="stylesheet" href="./assets/responsivo.css">
+
+    <title>Curriculo Maker</title>
+
+</head>
+<body>
+    <form class="form-input" id="form-input">
+
+        <section class="info-pessoais">
+
+            <h1 class="titulo">Informações Pessoais</h1>
+
+            <label for="name">Nome Completo</label>
+            <input type="text" placeholder="Digite seu nome completo sem abreviações" id="name" data-nome>
+
+            <label for="nacionalidade">Nacionalidade e Idade</label>
+            <input type="text" id="nacionalidade" data-nacionalidade>
+
+            <label for="endereco">Endereço</label>
+            <input type="text" placeholder="Rua Fulano, número 000" id="endereco" data-endereco>
+
+            <label for="bairro">Bairro</label>
+            <input type="text" placeholder="Centro - Rio de Janeiro" id="bairro" data-bairro>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" placeholder="(xx) xxxxx-xxxx" id="telefone" data-telefone>
+
+            <label for="e-mail">E-mail</label>
+            <input type="email" id="e-mail" placeholder="email@email.com" data-email>
+
+            <label for="linkedin">Linkedin</label>
+            <input type="text" id="linkedin" placeholder="email@email.com" data-linkedin>
+            
+            <label for="github">Repositório</label>
+            <input type="text" id="github" placeholder="email@email.com" data-github>
+
+        </section>
+
+        <section class="objetivo">
+
+            <h1 class="titulo">Objetivo</h1>
+
+            <label for="objetivo">Objetivo</label>
+            <input type="text" placeholder="Ex: Atuar como Analista" id="objetivo" data-objetivo>
+
+        </section>
+
+
+        <section class="formacao"> 
+
+            <h1 class="titulo">Formação Academica</h1>
+
+            <label for="formacao1">Formação</label>
+            <input type="text" placeholder="Formação - Ano Inicio a Ano Fim" id="formacao1" data-formacao-1>
+            <label for="instituicao1">Instituiçãoo</label>
+            <input type="text" placeholder="Nome da Instituição de Ensino" id="instituicao1" data-formacao-1>
+
+            <label for="formacao2">Formação</label>
+            <input type="text" placeholder="Formação - Ano Inicio a Ano Fim" id="formacao2" data-formacao-1>
+            <label for="instituicao2">Instituiçãoo</label>
+            <input type="text" placeholder="Nome da Instituição de Ensino" id="instituicao2" data-formacao-1>
+
+
+
+        </section>
+
+
+        <section class="experiencias">
+
+            <h1 class="titulo">Experiências</h1>
+
+            <div class="primeira-experiencia">
+                
+                <label for="empresa1">Empresa e Periodo</label>
+                <input type="text" id="empresa1" data-empresa-1>
+                <label for="cargo1">Cargo</label>
+                <input type="text" id="cargo1" data-cargo-1>
+                <label for="atribuicoes1">Atribuições</label>
+                <textarea class="txtarea"  id="atribuicoes1" data-atribuicoes-1></textarea>
+
+
+            </div>
+
+            <div class="segunda-experiencia">
+
+                <label for="empresa2">Empresa e Periodo</label>
+                <input type="text" id="empresa2" data-empresa-2>
+                <label for="cargo2">Cargo</label>
+                <input type="text" id="cargo2" data-cargo-2>
+                <label for="atribuicoes2">Atribuições</label>
+                <textarea class="txtarea" id="atribuicoes2" data-atribuicoes-2 ></textarea>
+
+            </div>
+
+            <div class="terceira-experiencia">
+
+                <label for="empresa3">Empresa e Periodo</label>
+                <input type="text" id="empresa3" data-empresa-3>
+                <label for="cargo3">Cargo</label>
+                <input type="text" id="cargo3" data-cargo-3>
+                <label for="atribuicoes3">Atribuições</label>
+                <textarea class="txtarea" id="atribuicoes3" data-atribuicoes-3></textarea>
+
+            </div>
+
+
+
+
+        </section>
+
+        <section class="atividade-complementar">
+
+            <h1 class="titulo">Atividade Complementar</h1>
+
+            <label for="atividade1">Atividade Complementar</label>
+            <input type="text" id="atividade1" data-atividade-1>
+
+            <label for="atividade2">Atividade Complementar</label>
+            <input type="text" id="atividade2" data-atividade-2>
+
+            <label for="atividade3">Atividade Complementar</label>
+            <input type="text" id="atividade3" data-atividade-3>
+
+            <label for="atividade4">Atividade Complementar</label>
+            <input type="text" id="atividade4" data-atividade-4>
+
+
+        </section>
+
+
+        <section class="idiomas">
+
+            <h1 class="titulo">Idiomas</h1>
+
+            <label for="idioma1">Idioma</label>
+            <input type="text" id="idioma1" idioma-1>
+
+            <label for="idioma2">Idioma</label>
+            <input type="text" id="idioma2" idioma-2>
+
+
+        </section>
+        
+        <div class="gerar-cv">
+
+        <button class="botao" onclick="geraCurriculo(event)">Gerar Curriculo</button>
+
+        </div>
+
+    </form>
+    
+
+
+
+    <section class="buttons" id="buttons">
+        <button onclick="voltar()" class="button-voltar">Voltar</button>
+        <button onclick="modelo1()" class="button-modelo1">Modelo Padrão</button>
+        <button onclick="modelo2()" class="button-modelo2">Modelo com Foto</button>
+
+    </section>
+
+    <section class="section-curriculo" id="section-curriculo">
+
+        <section class="box">
+        
+            <section class="section-pessoal">
+                
+                    <h1 class="curriculo-nome"></h1>
+                    
+                    <p class="curriculo-nacionalidade"></p> 
+                    <p class="curriculo-endereco"></p>
+                    <p class="curriculo-bairro"></p>
+
+                    <div class="div-flexbox">
+                        <p>Telefone:</p>
+                        <p class="curriculo-telefone"></p>
+                    </div>
+
+                    <div class="div-flexbox"> 
+                        <p>E-mail:</p>
+                        <p class="curriculo-email"></p>
+                    </div>
+
+                    <div class="div-flexbox">
+                        <p>Linkedin:</p>
+                        <p class="curriculo-linkedin"></p>
+                    </div>
+
+                    <div class="div-flexbox">
+                        <p>Repositório:</p>
+                        <p class="curriculo-github"></p>
+                    </div>
+
+            </section>
+
+            <section class="section-objetivo">
+                    <h4>Objetivo</h4>
+                    <p class="curriculo-objetio"></p>
+            </section>
+        
+            
+            <section class="section-formacao">
+
+                    <h4>Formação</h4>
+                    <p class="curriculo-primeira-formacao"></p>
+                    <p class="curriculo-primeira-universidade"></p>
+
+                    <p class="curriculo-segunda-formacao"></p>
+                    <p class="curriculo-segunda-universidade"></p>
+
+            </section>
+            
+        
+            <section class="section-experiencias">
+        
+                
+                <h4>Experiências</h4>
+
+                <div class="curriculo-experiencias">
+
+                    <div class="div-flexbox">
+                     <p id="curriculo-empresa1" class="empresa">Empresa: </p> 
+                     <p id="curriculo-primeira-empresa"></p>
+                    </div>
+
+                    <div class="div-flexbox">
+                     <p id="curriculo-cargo1" class="cargo">Cargo: </p>
+                     <p id="curriculo-primeiro-cargo"></p>
+                    </div>
+
+                    <div class="div-flexbox">
+                     <p id="curriculo-atribuicoes1" class="atribuicoes">Atribuições:</p>
+                     <p id="curriculo-primeira-experiencia"></p>
+                    </div>
+                    
+                    <div class="div-flexbox">
+                     <p id="curriculo-empresa2" class="empresa">Empresa: </p> 
+                     <p id="curriculo-segunda-empresa"></p>
+                    </div>
+
+                    <div class="div-flexbox">
+                     <p id="curriculo-cargo2"class="cargo">Cargo: </p>
+                     <p id="curriculo-segundo-cargo"></p>
+                    </div>
+
+                    <div class="div-flexbox">
+                     <p id="curriculo-atribuicoes2" class="atribuicoes">Atribuições:</p> 
+                     <p id="curriculo-segunda-experiencia"></p>
+                    </div>
+
+                    <div class="div-flexbox">
+                     <p id="curriculo-empresa3" class="empresa">Empresa:</p>
+                     <p id="curriculo-terceira-empresa"></p>
+                    </div>
+
+                    <div class="div-flexbox">
+                     <p id="curriculo-cargo3"class="cargo">Cargo:</p> 
+                     <p id="curriculo-terceiro-cargo"></p>
+                    </div>
+
+                    <div class="div-flexbox">
+                     <p id="curriculo-atribuicoes3"class="atribuicoes">Atribuições:</p> 
+                     <p id="curriculo-terceira-experiencia"></p>
+                    </div>
+
+                </div>   
+
+            </section>
+        
+            <section class="section-atividades-extras">
+        
+                    <h4>Atividades Complementares</h4>
+                    <ul>
+                        <li class="curriculo-primeira-atividade"></li>
+                        <li class="curriculo-segunda-atividade"></li>
+                        <li class="curriculo-terceira-atividade"></li>
+                        <li class="curriculo-quarta-atividade"></li>
+                    </ul>
+            </section>
+        
+            <section class="section-idiomas">
+
+                    <h4>Idiomas</h4>
+                    <ul>
+                        <li class="curriculo-primeiro-idioma"></li>
+                        <li class="curriculo-segundo-idioma"></li>
+                    </ul>
+
+            </section>
+        </section>
+    </section>
+
+<script src="./code.js"></script>
+
+</body>
+
+<footer>
+    <div class="rodape">
+        CM - Curriclo Maker &copy; - 2021
+    </div>
+</footer>
+
+</html>

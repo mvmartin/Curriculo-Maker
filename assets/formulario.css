@@ -1,0 +1,95 @@
+.titulo{
+    text-align: center;
+    font-family: "Baloo Da 2";
+}
+
+label{
+    font-family: "Mulish";
+}
+
+.info-pessoais{
+
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 20rem;
+    
+    
+}
+
+.objetivo{
+    display: flex;
+    flex-direction: column;
+    margin:1em 20rem;
+
+}
+
+.formacao{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 20rem;
+}
+
+.primeira-experiencia{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20rem;
+}
+
+.segunda-experiencia{
+
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 20rem;
+
+}
+
+.terceira-experiencia{
+
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 20rem;
+
+}
+
+.txtarea{
+
+    max-width: 100%;
+    max-height: 10rem;
+
+}
+
+
+.atividade-complementar{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 20rem;
+}
+
+.idiomas{
+
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 20rem;
+}
+
+.gerar-cv{
+    display: flex;
+    justify-content: center;
+}
+
+.botao{
+    margin: 1rem;
+    padding: 0.5rem;
+    background: rgb(137, 43, 226, 1);
+    border-radius: 5%;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.botao:hover{
+    background: rgba(255, 68, 0, 0.733);
+    transition: 0.5s;
+    
+}
+
